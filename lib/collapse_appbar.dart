@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class CollapseAppBar extends StatefulWidget {
   @override
@@ -25,12 +24,10 @@ class _CollapseAppBarState extends State<CollapseAppBar> {
                   backgroundColor: Colors.black,
                   flexibleSpace: FlexibleSpaceBar(
                       centerTitle: true,
-                      title: Text(
-                        "X-Ber Futsal Club",
-                        style: GoogleFonts.mrDafoe(
-                            fontWeight: FontWeight.w800,
-                            fontSize: 14,
-                            color: Colors.white70),
+                      title: Image.asset(
+                        'assets/images/angle-arrow-down.png',
+                        height: 20,
+                        color: Colors.grey,
                       ),
                       background: Image.asset(
                         'assets/images/bg.png',
@@ -55,11 +52,7 @@ class _CollapseAppBarState extends State<CollapseAppBar> {
               ];
             },
             body: TabBarView(
-              children: <Widget>[
-                PageOne(),
-                PageTwo(),
-                PageThree()
-              ],
+              children: <Widget>[PageOne(), PageTwo(), PageThree()],
               controller: _tabController,
             )),
       ),
@@ -150,7 +143,6 @@ class PageOne extends StatelessWidget {
     );
   }
 }
-
 
 class PageThree extends StatelessWidget {
   @override
