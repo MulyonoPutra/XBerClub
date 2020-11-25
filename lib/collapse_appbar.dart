@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:xber_futsal_club_app/menu_pages/gallery.dart';
 import 'package:xber_futsal_club_app/menu_pages/information.dart';
+import 'package:xber_futsal_club_app/menu_pages/profile.dart';
 import 'package:xber_futsal_club_app/menu_pages/schedule.dart';
 
 class CollapseAppBar extends StatefulWidget {
@@ -44,20 +45,20 @@ class _CollapseAppBarState extends State<CollapseAppBar> {
       body: WillPopScope(
         onWillPop: _onBackPressed,
         child: DefaultTabController(
-          length: 3,
+          length: 4,
           child: NestedScrollView(
               headerSliverBuilder:
                   (BuildContext context, bool innerBoxIsScrolled) {
                 return <Widget>[
                   SliverAppBar(
-                    expandedHeight: 750.0,
+                    expandedHeight: MediaQuery.of(context).size.height,
                     floating: false,
                     pinned: true,
                     backgroundColor: Colors.black,
                     flexibleSpace: FlexibleSpaceBar(
                         centerTitle: true,
                         title: Image.asset(
-                          'assets/images/angle-arrow-down.png',
+                          'assets/images/logo_app.png',
                           height: 20,
                           color: Colors.grey,
                         ),
@@ -73,9 +74,10 @@ class _CollapseAppBarState extends State<CollapseAppBar> {
                         labelColor: Colors.yellowAccent,
                         unselectedLabelColor: Colors.grey,
                         tabs: [
-                          Tab(icon: Icon(Icons.schedule), text: "Schedule"),
+                          Tab(icon: Icon(Icons.sports), text: "Match"),
                           Tab(icon: Icon(Icons.photo_album), text: "Gallery"),
                           Tab(icon: Icon(Icons.info), text: "Info"),
+                          Tab(icon: Icon(Icons.people), text: "Profile"),
                         ],
                       ),
                     ),
@@ -84,7 +86,7 @@ class _CollapseAppBarState extends State<CollapseAppBar> {
                 ];
               },
               body: TabBarView(
-                children: <Widget>[Schedule(), Gallery(), Information()],
+                children: <Widget>[Schedule(), Gallery(), Information(), Profile()],
                 controller: _tabController,
               )),
         ),
