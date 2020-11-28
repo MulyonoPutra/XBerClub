@@ -1,9 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:xber_futsal_club_app/menu_pages/gallery.dart';
-import 'package:xber_futsal_club_app/menu_pages/information.dart';
-import 'package:xber_futsal_club_app/menu_pages/profile.dart';
-import 'package:xber_futsal_club_app/menu_pages/schedule.dart';
+import 'package:xber_futsal_club_app/menu_pages/pages.dart';
 
 class CollapseAppBar extends StatefulWidget {
   @override
@@ -17,7 +14,7 @@ class _CollapseAppBarState extends State<CollapseAppBar> {
     return showDialog(
         context: context,
         builder: (BuildContext context) {
-          return CupertinoAlertDialog (
+          return CupertinoAlertDialog(
             title: Text('Are you sure?'),
             content: Text('You are going to exit the application'),
             actions: <Widget>[
@@ -70,11 +67,20 @@ class _CollapseAppBarState extends State<CollapseAppBar> {
                   SliverPersistentHeader(
                     delegate: _SliverAppBarDelegate(
                       TabBar(
-                        indicatorColor: Colors.yellowAccent,
-                        labelColor: Colors.yellowAccent,
+                        indicatorColor: Colors.yellow[400],
+                        labelColor: Colors.yellowAccent[400],
                         unselectedLabelColor: Colors.grey,
+                        labelStyle:
+                            TextStyle(fontFamily: 'Raleway-Medium', fontSize: 13),
                         tabs: [
-                          Tab(icon: Icon(Icons.sports), text: "Match"),
+                          Tab(
+                            icon: Icon(Icons.sports),
+                            child: Align(
+                              alignment: Alignment.center,
+                              child:
+                                  Text("Match", style: TextStyle(fontFamily: 'RobotoMono')),
+                            ),
+                          ),
                           Tab(icon: Icon(Icons.photo_album), text: "Gallery"),
                           Tab(icon: Icon(Icons.info), text: "Info"),
                           Tab(icon: Icon(Icons.people), text: "Profile"),
@@ -86,7 +92,12 @@ class _CollapseAppBarState extends State<CollapseAppBar> {
                 ];
               },
               body: TabBarView(
-                children: <Widget>[Schedule(), Gallery(), Information(), Profile()],
+                children: <Widget>[
+                  Schedule(),
+                  Gallery(),
+                  Information(),
+                  Profile()
+                ],
                 controller: _tabController,
               )),
         ),
