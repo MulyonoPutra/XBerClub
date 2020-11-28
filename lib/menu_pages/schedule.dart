@@ -1,21 +1,28 @@
-import 'package:flutter/material.dart';
+part of 'pages.dart';
 
 class Schedule extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      itemExtent: 250.0,
-      itemBuilder: (context, index) => Container(
-        padding: EdgeInsets.all(10.0),
-        child: Material(
-          elevation: 4.0,
-          borderRadius: BorderRadius.circular(5.0),
-          color: index % 2 == 0 ? Colors.cyan : Colors.deepOrange,
-          child: Center(
-            child: Text(index.toString()),
-          ),
+    return ListView(
+      children: <Widget>[
+        SizedBox(
+          height: 20,
         ),
-      ),
+        Column(
+          children: mockScores
+              .map((e) => Padding(
+                    padding: EdgeInsets.fromLTRB(15, 10, 10, 11),
+                    child: GestureDetector(
+                      onTap: () {},
+                      child: MatchListItem(
+                        score: e,
+                      ),
+                    ),
+                  ))
+              .toList(),
+        )
+      ],
     );
   }
 }
