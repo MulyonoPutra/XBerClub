@@ -38,7 +38,7 @@ class _CollapseAppBarState extends State<CollapseAppBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.black45,
       body: WillPopScope(
         onWillPop: _onBackPressed,
         child: DefaultTabController(
