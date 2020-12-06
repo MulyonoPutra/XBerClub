@@ -31,8 +31,18 @@ class Score extends Equatable {
 }
 
 List<Score> mockScores = [
-  Score(
+    Score(
       id: 1,
+      ourLogo:
+          "assets/images/logo_app.png",
+      opponentLogo:
+          "https://png.pngtree.com/element_pic/00/00/00/0056a4a011d9d09.jpg",
+      clubName: "X-Ber FC",
+      opponentName: "CJ Futsal Club",
+      ourScore: 0,
+      opponentScore: 4),
+  Score(
+      id: 2,
       ourLogo:
           "assets/images/logo_app.png",
       opponentLogo:
@@ -42,7 +52,7 @@ List<Score> mockScores = [
       ourScore: 4,
       opponentScore: 1),
   Score(
-      id: 1,
+      id: 3,
       ourLogo:
           "assets/images/logo_app.png",
       opponentLogo:
@@ -52,7 +62,7 @@ List<Score> mockScores = [
       ourScore: 12,
       opponentScore: 19),
   Score(
-      id: 1,
+      id: 4,
       ourLogo:
           "assets/images/logo_app.png",
       opponentLogo:
