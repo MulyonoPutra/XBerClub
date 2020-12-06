@@ -26,7 +26,7 @@ class MatchListItem extends StatelessWidget {
               padding: const EdgeInsets.fromLTRB(24, 15, 10, 10),
               child: Row(
                 children: <Widget>[
-                  Image.asset(score.ourLogo),
+                  Image.asset(score.ourLogo, height: 40, width: 40,),
                   Spacer(),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.end,
@@ -34,8 +34,8 @@ class MatchListItem extends StatelessWidget {
                       Text(
                         score.clubName,
                         style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 18.0,
+                            fontWeight: FontWeight.w600,
+                            fontSize: 16.0,
                             fontFamily: 'Raleway-Medium'),
                       ),
                       const SizedBox(height: 5.0),
