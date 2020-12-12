@@ -90,9 +90,9 @@ class _ProfilePlayerDetailsState extends State<ProfilePlayerDetails> {
                           margin: EdgeInsets.fromLTRB(0, 14, 0, 16),
                           child: Text(
                             widget.player.dscriptions,
-                            style: GoogleFonts.firaCode(
+                            style: GoogleFonts.yellowtail(
                                     fontWeight: FontWeight.w300,
-                                    color: Colors.black),
+                                    color: Colors.black, fontSize: 14),
                           ),
                         ),
                       ],
