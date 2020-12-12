@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:xber_futsal_club_app/menu_pages/pages.dart';
 
 class CollapseAppBar extends StatefulWidget {
@@ -78,12 +79,45 @@ class _CollapseAppBarState extends State<CollapseAppBar> {
                             child: Align(
                               alignment: Alignment.center,
                               child:
-                                  Text("Match", style: TextStyle(fontFamily: 'RobotoMono')),
+                                  Text("Match", style: GoogleFonts.yellowtail(
+                                fontWeight: FontWeight.w300,
+                                color: Colors.white,
+                                fontSize: 14)),
                             ),
                           ),
-                          Tab(icon: Icon(Icons.photo_album), text: "Gallery"),
-                          Tab(icon: Icon(Icons.info), text: "Info"),
-                          Tab(icon: Icon(Icons.people), text: "Profile"),
+                          Tab(
+                            icon: Icon(Icons.photo_album),
+                            child: Align(
+                              alignment: Alignment.center,
+                              child:
+                                  Text("Gallery", style: GoogleFonts.yellowtail(
+                                fontWeight: FontWeight.w300,
+                                color: Colors.white,
+                                fontSize: 14)),
+                            ),
+                          ),
+                          Tab(
+                            icon: Icon(Icons.info),
+                            child: Align(
+                              alignment: Alignment.center,
+                              child:
+                                  Text("Info", style: GoogleFonts.yellowtail(
+                                fontWeight: FontWeight.w300,
+                                color: Colors.white,
+                                fontSize: 14)),
+                            ),
+                          ),
+                          Tab(
+                            icon: Icon(Icons.people),
+                            child: Align(
+                              alignment: Alignment.center,
+                              child:
+                                  Text("Profile", style: GoogleFonts.yellowtail(
+                                fontWeight: FontWeight.w300,
+                                color: Colors.white,
+                                fontSize: 14)),
+                            ),
+                          ),
                         ],
                       ),
                     ),
