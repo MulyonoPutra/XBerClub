@@ -13,6 +13,11 @@ class PlayerList extends StatelessWidget {
         child: Card(
           child: Stack(
             children: [
+              Center(
+                  child: CircularProgressIndicator(
+                      backgroundColor: Colors.yellowAccent,
+                      valueColor:
+                          new AlwaysStoppedAnimation<Color>(Colors.black))),
               Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(5.0),
@@ -23,19 +28,20 @@ class PlayerList extends StatelessWidget {
               ),
               Container(
                 child: Padding(
-                  padding: const EdgeInsets.only(top: 158.0),
+                  padding: const EdgeInsets.only(top: 168.0),
                   child: Center(
                       child: Container(
-                        width: 100,
-                        height: 25,
-                        color: Colors.black,
+                        color: Colors.black.withOpacity(0.5),
+                    padding: const EdgeInsets.only(top: 0.0),
+                          width: 200,
+                          height: 25,
                           child: Center(
                             child: Text(
-                    player.name,
-                    style: GoogleFonts.firaCode(
-                        fontWeight: FontWeight.w700,
-                        color: Colors.yellowAccent),
-                  ),
+                              player.name,
+                              style: GoogleFonts.firaCode(
+                                  fontWeight: FontWeight.w700,
+                                  color: Colors.yellow[600]),
+                            ),
                           ))),
                 ),
               )

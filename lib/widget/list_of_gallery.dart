@@ -12,12 +12,16 @@ class ListOfGallery extends StatelessWidget {
         child: Card(
           child: Stack(
             children: [
+              Center(
+                  child: CircularProgressIndicator(
+                      backgroundColor: Colors.yellowAccent,
+                      valueColor:
+                          new AlwaysStoppedAnimation<Color>(Colors.black))),
               Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(5.0),
                   image: DecorationImage(
-                      image: NetworkImage(gallery.images),
-                      fit: BoxFit.cover),
+                      image: NetworkImage(gallery.images), fit: BoxFit.cover),
                 ),
               ),
             ],
