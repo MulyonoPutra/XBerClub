@@ -35,7 +35,7 @@ List<Player> mockPlayers = [
     id: 1,
     name: "Budi",
     profilPicture:
-        "https://firebasestorage.googleapis.com/v0/b/xber-futsal-club.appspot.com/o/budi%20caplik123.png?alt=media&token=15b4cd3a-ff40-45bc-b117-56b3defb3ac3",
+        "https://firebasestorage.googleapis.com/v0/b/xber-futsal-club.appspot.com/o/BudiCaplik.png?alt=media&token=a83e3921-09bf-4f09-ab15-75393cc0b249",
     dateOfBirth: "Sukabumi, DD MM YYYY",
     heightAndWeight: "xxx kg / xx cm",
     backNumber: 12,
@@ -72,7 +72,8 @@ List<Player> mockPlayers = [
     dateOfBirth: "Sukabumi, DD MM YYYY",
     heightAndWeight: "xxx kg / xx cm",
     backNumber: 12,
-    dscriptions: "Nice talent! lincah, a lot of speed, smart. Full of teknik dalam bermain.",
+    dscriptions:
+        "Nice talent! lincah, a lot of speed, smart. Full of teknik dalam bermain.",
   ),
   Player(
     id: 5,
@@ -83,7 +84,7 @@ List<Player> mockPlayers = [
     heightAndWeight: "xxx kg / xx cm",
     backNumber: 12,
     dscriptions:
-        "our leader! he is our captain and our goalkeeper. he can lead our team but sometimes he must be focus",
+        "Our leader! Seorang kapten sekaligus goalkeeper. Leadership yang bagus dalam tim.",
   ),
   Player(
     id: 6,
@@ -94,7 +95,7 @@ List<Player> mockPlayers = [
     heightAndWeight: "xxx kg / xx cm",
     backNumber: 12,
     dscriptions:
-        "kengototan ketika bermain dipadukan dengan teknik alami yang dia miliki, sayangnya dia jarang berlatih dan bakatnya pun perlahan mulai hilang. ",
+        "kengototan ketika bermain sekaligus memiliki teknik tersendiri menjadikan pemain yang bagus. Bakat yang dimiliki perlahan turun karena jarang berlatih.",
   ),
   Player(
     id: 7,
@@ -116,7 +117,7 @@ List<Player> mockPlayers = [
     heightAndWeight: "xxx kg / xx cm",
     backNumber: 12,
     dscriptions:
-        "great player! pemain lincah, smart, full teknik. terkadang dia sering nervous ketika diawal pertandingan.",
+        "Great player! Lincah, smart, full teknik. Sering nervous diawal pertandingan.",
   ),
   Player(
     id: 9,
@@ -127,6 +128,6 @@ List<Player> mockPlayers = [
     heightAndWeight: "xxx kg / xx cm",
     backNumber: 12,
     dscriptions:
-        " ",
+        "Belum bisa menyimpulkan banyak. Yang pasti andre bermain full of technic dan punya skill yang baik. Poin utama bisa bermain dengan tenang di situasi tertekan. ",
   ),
 ];
