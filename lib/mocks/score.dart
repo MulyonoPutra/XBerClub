@@ -38,7 +38,7 @@ List<Score> mockScores = [
       opponentLogo:
           "https://png.pngtree.com/element_pic/00/00/00/0056a4a011d9d09.jpg",
       clubName: "X-Ber FC",
-      opponentName: "CJ Futsal Club",
+      opponentName: "CJ Futsal",
       ourScore: 0,
       opponentScore: 4),
   Score(
