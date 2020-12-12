@@ -17,15 +17,21 @@ class _ProfileState extends State<Profile> {
       children: [
         Container(),
         Container(
-          height: 100,
+          height: MediaQuery.of(context).size.height,
           margin: EdgeInsets.all(12),
           child: Expanded(
             child: StaggeredGridView.countBuilder(
-              // physics: new BouncingScrollPhysics(),
               crossAxisCount: 4,
               itemCount: mockPlayers.length,
-              itemBuilder: (BuildContext context, int index) => PlayerList(
-                player: mockPlayers[index],
+              itemBuilder: (BuildContext context, int index) => GestureDetector(
+                onTap: () => Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => ProfilePlayerDetails(player: mockPlayers[index]),
+            )),
+                child: PlayerList(
+                  player: mockPlayers[index],
+                ),
               ),
               staggeredTileBuilder: (_) => StaggeredTile.fit(2),
               mainAxisSpacing: 4,
