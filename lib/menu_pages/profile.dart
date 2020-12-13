@@ -19,7 +19,7 @@ class _ProfileState extends State<Profile> {
         Container(
           height: MediaQuery.of(context).size.height,
           margin: EdgeInsets.all(12),
-          child: Expanded(
+          child: Container(
             child: StaggeredGridView.countBuilder(
               crossAxisCount: 4,
               itemCount: mockPlayers.length,
