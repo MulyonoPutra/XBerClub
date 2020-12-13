@@ -8,8 +8,12 @@ class ListOfGallery extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+        padding: const EdgeInsets.only(top: 20.0),
         height: 200,
         child: Card(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10.0),
+          ),
           child: Stack(
             children: [
               Center(
@@ -19,7 +23,7 @@ class ListOfGallery extends StatelessWidget {
                           new AlwaysStoppedAnimation<Color>(Colors.black))),
               Container(
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(5.0),
+                  borderRadius: BorderRadius.circular(10.0),
                   image: DecorationImage(
                       image: NetworkImage(gallery.images), fit: BoxFit.cover),
                 ),
