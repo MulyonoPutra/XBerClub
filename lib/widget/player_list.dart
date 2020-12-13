@@ -38,7 +38,7 @@ class PlayerList extends StatelessWidget {
                           child: Center(
                             child: Text(
                               player.name,
-                              style: GoogleFonts.firaCode(
+                              style: GoogleFonts.lobsterTwo(
                                   fontWeight: FontWeight.w700,
                                   color: Colors.yellow[600]),
                             ),

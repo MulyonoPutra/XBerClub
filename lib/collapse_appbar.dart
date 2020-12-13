@@ -79,7 +79,7 @@ class _CollapseAppBarState extends State<CollapseAppBar> {
                             child: Align(
                               alignment: Alignment.center,
                               child:
-                                  Text("Match", style: GoogleFonts.yellowtail(
+                                  Text("Match", style: GoogleFonts.lobsterTwo(
                                 fontWeight: FontWeight.w300,
                                 color: Colors.white,
                                 fontSize: 14)),
@@ -90,7 +90,7 @@ class _CollapseAppBarState extends State<CollapseAppBar> {
                             child: Align(
                               alignment: Alignment.center,
                               child:
-                                  Text("Gallery", style: GoogleFonts.yellowtail(
+                                  Text("Gallery", style: GoogleFonts.lobsterTwo(
                                 fontWeight: FontWeight.w300,
                                 color: Colors.white,
                                 fontSize: 14)),
@@ -101,7 +101,7 @@ class _CollapseAppBarState extends State<CollapseAppBar> {
                             child: Align(
                               alignment: Alignment.center,
                               child:
-                                  Text("Info", style: GoogleFonts.yellowtail(
+                                  Text("Info", style: GoogleFonts.lobsterTwo(
                                 fontWeight: FontWeight.w300,
                                 color: Colors.white,
                                 fontSize: 14)),
@@ -112,7 +112,7 @@ class _CollapseAppBarState extends State<CollapseAppBar> {
                             child: Align(
                               alignment: Alignment.center,
                               child:
-                                  Text("Profile", style: GoogleFonts.yellowtail(
+                                  Text("Profile", style: GoogleFonts.lobsterTwo(
                                 fontWeight: FontWeight.w300,
                                 color: Colors.white,
                                 fontSize: 14)),
