@@ -16,9 +16,8 @@ class _OfficialTeamState extends State<OfficialTeam> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black45,
-      body: WillPopScope(
-        onWillPop: () {},
-        child: Container(
+        body: Container(
+          padding: EdgeInsets.only(bottom: 30),
           color: Colors.black45,
           child: DefaultTabController(
             length: 2,
@@ -74,7 +73,6 @@ class _OfficialTeamState extends State<OfficialTeam> {
             ),
           ),
         ),
-      ),
     );
   }
 }

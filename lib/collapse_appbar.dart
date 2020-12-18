@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:xber_futsal_club_app/menu_pages/pages.dart';
+import 'package:xber_futsal_club_app/widget/bottom_navbar.dart';
 
 class CollapseAppBar extends StatefulWidget {
   @override
@@ -9,7 +8,6 @@ class CollapseAppBar extends StatefulWidget {
 }
 
 class _CollapseAppBarState extends State<CollapseAppBar> {
-  TabController _tabController;
 
   Future<bool> _onBackPressed() {
     return showDialog(
@@ -39,11 +37,9 @@ class _CollapseAppBarState extends State<CollapseAppBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black45,
-      body: WillPopScope(
-        onWillPop: _onBackPressed,
-        child: DefaultTabController(
-          length: 4,
+        backgroundColor: Colors.black45,
+        body: WillPopScope(
+          onWillPop: _onBackPressed,
           child: NestedScrollView(
               headerSliverBuilder:
                   (BuildContext context, bool innerBoxIsScrolled) {
@@ -65,121 +61,12 @@ class _CollapseAppBarState extends State<CollapseAppBar> {
                           fit: BoxFit.cover,
                         )),
                   ),
-                  SliverPersistentHeader(
-                    delegate: _SliverAppBarDelegate(
-                      TabBar(
-                        indicatorColor: Colors.yellow[400],
-                        labelColor: Colors.yellowAccent[400],
-                        unselectedLabelColor: Colors.grey,
-                        labelStyle:
-                            TextStyle(fontFamily: 'Raleway-Medium', fontSize: 13),
-                        tabs: [
-                          Tab(
-                            icon: Icon(Icons.sports),
-                            child: Align(
-                              alignment: Alignment.center,
-                              child:
-                                  Text("Match", style: GoogleFonts.lobsterTwo(
-                                fontWeight: FontWeight.w300,
-                                color: Colors.white,
-                                fontSize: 14)),
-                            ),
-                          ),
-                          Tab(
-                            icon: Icon(Icons.photo_album),
-                            child: Align(
-                              alignment: Alignment.center,
-                              child:
-                                  Text("Gallery", style: GoogleFonts.lobsterTwo(
-                                fontWeight: FontWeight.w300,
-                                color: Colors.white,
-                                fontSize: 14)),
-                            ),
-                          ),
-                          Tab(
-                            icon: Icon(Icons.info),
-                            child: Align(
-                              alignment: Alignment.center,
-                              child:
-                                  Text("Info", style: GoogleFonts.lobsterTwo(
-                                fontWeight: FontWeight.w300,
-                                color: Colors.white,
-                                fontSize: 14)),
-                            ),
-                          ),
-                          Tab(
-                            icon: Icon(Icons.people),
-                            child: Align(
-                              alignment: Alignment.center,
-                              child:
-                                  Text("Profile", style: GoogleFonts.lobsterTwo(
-                                fontWeight: FontWeight.w300,
-                                color: Colors.white,
-                                fontSize: 14)),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    pinned: false,
-                  ),
                 ];
               },
-              body: TabBarView(
-                children: <Widget>[
-                  Schedule(),
-                  Gallery(),
-                  Information(),
-                  Profile()
-                ],
-                controller: _tabController,
+              body: Container(
+                child: BottomNavBar(),
               )),
-        ),
-      ),
-    );
+        ));
   }
 }
 
-class _SliverAppBarDelegate extends SliverPersistentHeaderDelegate {
-  _SliverAppBarDelegate(this._tabBar);
-
-  final TabBar _tabBar;
-
-  @override
-  double get minExtent => _tabBar.preferredSize.height;
-  @override
-  double get maxExtent => _tabBar.preferredSize.height;
-
-  @override
-  Widget build(
-      BuildContext context, double shrinkOffset, bool overlapsContent) {
-    return new Container(
-      child: _tabBar,
-    );
-  }
-
-  @override
-  bool shouldRebuild(_SliverAppBarDelegate oldDelegate) {
-    return false;
-  }
-}
-
-@override
-Widget build(BuildContext context) {
-  return SingleChildScrollView(
-    child: ListView.builder(
-      itemExtent: 250.0,
-      itemBuilder: (context, index) => Container(
-        padding: EdgeInsets.all(10.0),
-        child: Material(
-          elevation: 4.0,
-          borderRadius: BorderRadius.circular(5.0),
-          color: index % 2 == 0 ? Colors.cyan : Colors.deepOrange,
-          child: Center(
-            child: Text(index.toString()),
-          ),
-        ),
-      ),
-    ),
-  );
-}
