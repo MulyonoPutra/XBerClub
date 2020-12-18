@@ -8,7 +8,6 @@ class CollapseAppBar extends StatefulWidget {
 }
 
 class _CollapseAppBarState extends State<CollapseAppBar> {
-
   Future<bool> _onBackPressed() {
     return showDialog(
         context: context,
@@ -51,10 +50,17 @@ class _CollapseAppBarState extends State<CollapseAppBar> {
                     backgroundColor: Colors.black,
                     flexibleSpace: FlexibleSpaceBar(
                         centerTitle: true,
-                        title: Image.asset(
-                          'assets/images/logo_app.png',
-                          height: 20,
-                          color: Colors.grey,
+                        title: GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => BottomNavBar()));
+                          },
+                          child: Image.asset(
+                            'assets/images/logo_app.png',
+                            height: 40,
+                          ),
                         ),
                         background: Image.asset(
                           'assets/images/bg.png',
@@ -69,4 +75,3 @@ class _CollapseAppBarState extends State<CollapseAppBar> {
         ));
   }
 }
-
