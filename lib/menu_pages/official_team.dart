@@ -35,7 +35,7 @@ class _OfficialTeamState extends State<OfficialTeam> {
                             fontFamily: 'Raleway-Medium', fontSize: 13),
                         tabs: [
                           Tab(
-                            icon: Icon(Icons.sports),
+                            icon: Icon(Icons.person_pin_circle),
                             child: Align(
                               alignment: Alignment.center,
                               child: Text("Player",
@@ -46,7 +46,7 @@ class _OfficialTeamState extends State<OfficialTeam> {
                             ),
                           ),
                           Tab(
-                            icon: Icon(Icons.photo_album),
+                            icon: Icon(Icons.person_pin_circle_rounded),
                             child: Align(
                               alignment: Alignment.center,
                               child: Text("Official",
@@ -59,7 +59,7 @@ class _OfficialTeamState extends State<OfficialTeam> {
                         ],
                       ),
                     ),
-                    pinned: true,
+                    pinned: false,
                   ),
                 ];
               },

@@ -23,7 +23,7 @@ class MatchListItem extends StatelessWidget {
               decoration: BoxDecoration(
                 color: Colors.black,
                 gradient: LinearGradient(
-                    colors: [Colors.black87, Colors.yellow],
+                    colors: [Colors.black87, Colors.amberAccent],
                     begin: const FractionalOffset(0.0, 0.0),
                     end: const FractionalOffset(0.5, 0.0),
                     
