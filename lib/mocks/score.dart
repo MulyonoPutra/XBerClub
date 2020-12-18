@@ -52,16 +52,6 @@ List<Score> mockScores = [
       ourScore: 4,
       opponentScore: 1),
   Score(
-      id: 3,
-      ourLogo:
-          "assets/images/logo_app.png",
-      opponentLogo:
-          "https://png.pngtree.com/element_pic/00/00/00/0056a4a011d9d09.jpg",
-      clubName: "X-Ber FC",
-      opponentName: "Pak Heru FC",
-      ourScore: 12,
-      opponentScore: 19),
-  Score(
       id: 4,
       ourLogo:
           "assets/images/logo_app.png",

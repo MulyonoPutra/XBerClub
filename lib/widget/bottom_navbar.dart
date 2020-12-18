@@ -1,7 +1,6 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:xber_futsal_club_app/menu_pages/pages.dart';
-import 'package:flutter_colorpicker/flutter_colorpicker.dart';
 
 class BottomNavBar extends StatefulWidget {
   @override
@@ -45,8 +44,8 @@ class _BottomNavBarState extends State<BottomNavBar> {
                     size: 30,
                   ))
               .toList(),
-          color: Colors.amber[400],
-          buttonBackgroundColor: Colors.amber[400],
+          color: Colors.amber[400].withOpacity(0.8),
+          buttonBackgroundColor: Colors.amber[400].withOpacity(0.8),
           backgroundColor: Colors.black,
           animationCurve: Curves.easeInOut,
           animationDuration: Duration(milliseconds: 600),
