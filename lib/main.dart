@@ -33,7 +33,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
     ),
     MyRoute(
       iconData: Icons.person,
-      page: Profile(),
+      page: OfficialTeam(),
     ),
     MyRoute(
       iconData: Icons.schedule,

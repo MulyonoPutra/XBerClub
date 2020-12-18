@@ -17,13 +17,13 @@ class Gallery extends Equatable {
 }
 
 List<Gallery> mockGallery = [
-    Gallery(
-    images:
-        "https://firebasestorage.googleapis.com/v0/b/xber-futsal-club.appspot.com/o/Gallery9.jpeg?alt=media&token=8dbcb76c-0112-4cfa-8495-06cfadd890be",
-  ),
   Gallery(
     images:
         "https://firebasestorage.googleapis.com/v0/b/xber-futsal-club.appspot.com/o/Gallery10.jpeg?alt=media&token=f922e453-3054-4b8e-b574-62be9f60f6fc",
+  ),
+  Gallery(
+    images:
+        "https://firebasestorage.googleapis.com/v0/b/xber-futsal-club.appspot.com/o/Gallery9.jpeg?alt=media&token=8dbcb76c-0112-4cfa-8495-06cfadd890be",
   ),
   Gallery(
     images:
@@ -65,5 +65,4 @@ List<Gallery> mockGallery = [
     images:
         "https://firebasestorage.googleapis.com/v0/b/xber-futsal-club.appspot.com/o/Gallery4.jpeg?alt=media&token=9c87d8bd-8cbd-4ed4-b735-ab811a9277ad",
   ),
-
 ];
