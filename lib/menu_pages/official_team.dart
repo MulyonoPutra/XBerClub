@@ -17,7 +17,7 @@ class _OfficialTeamState extends State<OfficialTeam> {
     return Scaffold(
       backgroundColor: Colors.black45,
         body: Container(
-          padding: EdgeInsets.only(bottom: 30),
+          padding: EdgeInsets.only(top: 30),
           color: Colors.black45,
           child: DefaultTabController(
             length: 2,
@@ -28,8 +28,8 @@ class _OfficialTeamState extends State<OfficialTeam> {
                   SliverPersistentHeader(
                     delegate: _SliverAppBarDelegate(
                       TabBar(
-                        indicatorColor: Colors.yellow[400],
-                        labelColor: Colors.yellowAccent[400],
+                        indicatorColor: Colors.amber[400].withOpacity(0.8),
+                        labelColor: Colors.amber[400].withOpacity(0.8),
                         unselectedLabelColor: Colors.grey,
                         labelStyle: TextStyle(
                             fontFamily: 'Raleway-Medium', fontSize: 13),

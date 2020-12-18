@@ -25,10 +25,11 @@ class _ProfileState extends State<Profile> {
               itemCount: mockPlayers.length,
               itemBuilder: (BuildContext context, int index) => GestureDetector(
                 onTap: () => Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => ProfilePlayerDetails(player: mockPlayers[index]),
-            )),
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) =>
+                          ProfilePlayerDetails(player: mockPlayers[index]),
+                    )),
                 child: PlayerList(
                   player: mockPlayers[index],
                 ),

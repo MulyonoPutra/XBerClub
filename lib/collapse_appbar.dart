@@ -14,7 +14,7 @@ class _CollapseAppBarState extends State<CollapseAppBar> {
         builder: (BuildContext context) {
           return CupertinoAlertDialog(
             title: Text('Are you sure?'),
-            content: Text('You are going to exit the application'),
+            content: Text('You are going to exit the X-Ber application'),
             actions: <Widget>[
               FlatButton(
                 child: Text('NO'),

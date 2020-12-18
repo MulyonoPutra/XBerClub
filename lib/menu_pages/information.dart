@@ -1,6 +1,12 @@
 part of 'pages.dart';
 
 class Information extends StatelessWidget {
+  final Score score;
+  const Information({
+    Key key,
+    this.score,
+  }) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     bool noInformation = true;
@@ -9,7 +15,7 @@ class Information extends StatelessWidget {
             child: Center(
               child: Text(
                 "Nothing Information",
-                style: GoogleFonts.specialElite(
+                style: GoogleFonts.lobsterTwo(
                     fontWeight: FontWeight.w700, color: Colors.white),
               ),
             ),
@@ -29,9 +35,37 @@ class Information extends StatelessWidget {
                   child: Stack(
                     alignment: Alignment.bottomLeft,
                     children: [
-                      Image.network(
-                        'https://firebasestorage.googleapis.com/v0/b/xber-futsal-club.appspot.com/o/Gallery20.jpeg?alt=media&token=e230a02b-6f60-40ee-b5df-e3f52b4b94da',
-                        fit: BoxFit.cover,
+                      Container(
+                        child: Column(
+                          children: [
+                            Center(
+                              child: Text("Violet Cup",
+                                  style: GoogleFonts.lobsterTwo(
+                                      fontWeight: FontWeight.w300,
+                                      color: Colors.black,
+                                      fontSize: 14)),
+                            ),
+                            Row(
+                              children: [
+                                Column(
+                                  children: [
+                                    Container(
+                                      height: 40,
+                                      decoration: BoxDecoration(
+                                        borderRadius:
+                                            BorderRadius.circular(10.0),
+                                        image: DecorationImage(
+                                            image: NetworkImage(
+                                                "https://firebasestorage.googleapis.com/v0/b/xber-futsal-club.appspot.com/o/Gallery18.jpeg?alt=media&token=c22f75e4-9286-4944-b73e-1e5385ffdb1f"),
+                                            fit: BoxFit.cover),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            )
+                          ],
+                        ),
                       ),
                       Positioned(
                         bottom: 0,
@@ -53,22 +87,6 @@ class Information extends StatelessWidget {
                           ),
                         ),
                       ),
-
-/*                 Container(
-                  color: Colors.black.withOpacity(0.5),
-                  padding: const EdgeInsets.all(8.0),
-                  child: Column(
-                    
-                    mainAxisSize: MainAxisSize.min,
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: <Widget>[
-                      Center(
-                        child: Text("Awesome", style: TextStyle(fontSize: 14)),
-                      )
-                      
-                    ],
-                  ),
-                ) */
                     ],
                   ),
                 ),

@@ -83,7 +83,6 @@ class _ProfilePlayerDetailsState extends State<ProfilePlayerDetails> {
                             SizedBox(
                               height: 6,
                             ),
-
                           ],
                         ),
                         Container(
@@ -91,8 +90,9 @@ class _ProfilePlayerDetailsState extends State<ProfilePlayerDetails> {
                           child: Text(
                             widget.player.dscriptions,
                             style: GoogleFonts.lobsterTwo(
-                                    fontWeight: FontWeight.w300,
-                                    color: Colors.black, fontSize: 14),
+                                fontWeight: FontWeight.w300,
+                                color: Colors.black,
+                                fontSize: 14),
                           ),
                         ),
                       ],

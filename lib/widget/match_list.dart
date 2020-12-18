@@ -18,112 +18,112 @@ class MatchListItem extends StatelessWidget {
           ),
           child: Container(
             decoration: BoxDecoration(
-          color: Colors.black,
-          gradient: LinearGradient(
-              colors: [Colors.black87, Colors.amberAccent],
-              begin: const FractionalOffset(0.0, 0.0),
-              end: const FractionalOffset(0.5, 0.0),
-              tileMode: TileMode.mirror),
-        ),
+              color: Colors.black,
+              gradient: LinearGradient(
+                  colors: [Colors.black87, Colors.amberAccent],
+                  begin: const FractionalOffset(0.0, 0.0),
+                  end: const FractionalOffset(0.5, 0.0),
+                  tileMode: TileMode.mirror),
+            ),
             child: Stack(
               children: [
-                Column(
+                Row(
                   children: [
-                    Center(
-                      child: Text("Violet Cup",
-                          style: GoogleFonts.lobsterTwo(
-                              fontWeight: FontWeight.w300,
-                              color: Colors.black,
-                              fontSize: 14)),
+                    Container(
+                      padding: EdgeInsets.only(left: 52, top: 20),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          Image.asset(
+                            score.ourLogo,
+                            height: 60,
+                            width: 50,
+                          ),
+                          Text(
+                            score.clubName,
+                            style: GoogleFonts.yellowtail(
+                                fontWeight: FontWeight.w300,
+                                color: Colors.black,
+                                fontSize: 14),
+                          ),
+                        ],
+                      ),
                     ),
-                    SizedBox(height: 20),
-                    Row(
-                      children: [
-                        Container(
-                          padding: EdgeInsets.only(left: 20),
-                          child: Column(
-                            children: [
-                              Image.asset(
-                                score.ourLogo,
-                                height: 50,
-                                width: 40,
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.only(top: 10.0),
-                                child: Text(
-                                  score.clubName,
-                                  style: GoogleFonts.yellowtail(
-                                      fontWeight: FontWeight.w300,
-                                      color: Colors.black,
-                                      fontSize: 14),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        Container(
-                          padding: const EdgeInsets.only(
-                              bottom: 25.0, left: 70.0, right: 20.0),
-                          child: Column(
-                            children: [
-                              Row(
-                                children: [
-                                  Text(
-                                    score.ourScore.toString(),
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 24.0,
+                    Container(
+                      padding: EdgeInsets.only(left: 50),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Center(
+                            child: Column(
+                              children: [
+                                Text("Violet Cup",
+                                    style: GoogleFonts.lobsterTwo(
+                                        fontWeight: FontWeight.w300,
+                                        color: Colors.black,
+                                        fontSize: 14)),
+                                SizedBox(height: 20),
+                                Row(
+                                  children: [
+                                    Text(
+                                      score.ourScore.toString(),
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 24.0,
+                                      ),
                                     ),
-                                  ),
-                                  Text(
-                                    " : ",
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 18.0,
+                                    Text(
+                                      " : ",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 18.0,
+                                      ),
                                     ),
-                                  ),
-                                  Text(
-                                    score.opponentScore.toString(),
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 24.0,
+                                    Text(
+                                      score.opponentScore.toString(),
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 24.0,
+                                      ),
                                     ),
+                                  ],
+                                ),
+                                Text(
+                                  "29 November 2020",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 10.0,
                                   ),
-                                ],
-                              ),
-                              Text(
-                                "29 November 2020",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 10.0,
                                 ),
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                    Container(
+                      padding: EdgeInsets.only(top: 28, left: 40),
+                      child: Center(
+                        child: Column(
+                          children: [
+                            CircleAvatar(
+                              backgroundImage: NetworkImage(
+                                  "https://source.unsplash.com/random"),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(top: 10.0),
+                              child: Text(
+                                score.opponentName,
+                                style: GoogleFonts.yellowtail(
+                                    fontWeight: FontWeight.w300,
+                                    color: Colors.black,
+                                    fontSize: 14),
                               ),
-                            ],
-                          ),
+                            ),
+                          ],
                         ),
-                        Container(
-                          padding: EdgeInsets.only(left: 60),
-                          child: Column(
-                            children: [
-                              CircleAvatar(
-                                backgroundImage: NetworkImage(
-                                    "https://source.unsplash.com/random"),
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.only(top: 10.0),
-                                child: Text(
-                                  score.opponentName,
-                                  style: GoogleFonts.yellowtail(
-                                      fontWeight: FontWeight.w300,
-                                      color: Colors.black,
-                                      fontSize: 14),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    )
+                      ),
+                    ),
                   ],
                 ),
                 Container(

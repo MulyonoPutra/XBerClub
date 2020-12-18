@@ -31,8 +31,8 @@ class PlayerList extends StatelessWidget {
                   padding: const EdgeInsets.only(top: 168.0),
                   child: Center(
                       child: Container(
-                        color: Colors.black.withOpacity(0.5),
-                    padding: const EdgeInsets.only(top: 0.0),
+                          color: Colors.black.withOpacity(0.5),
+                          padding: const EdgeInsets.only(top: 0.0),
                           width: 200,
                           height: 25,
                           child: Center(

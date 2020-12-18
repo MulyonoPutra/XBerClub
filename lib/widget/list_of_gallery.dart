@@ -9,7 +9,7 @@ class ListOfGallery extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        padding: const EdgeInsets.only(top: 20.0),
+        padding: const EdgeInsets.only(top: 10.0, bottom: 10),
         height: 200,
         child: Card(
           shape: RoundedRectangleBorder(
@@ -31,11 +31,11 @@ class ListOfGallery extends StatelessWidget {
               ),
               Container(
                 child: Padding(
-                  padding: const EdgeInsets.only(top: 168.0),
+                  padding: const EdgeInsets.only(top: 182.0),
                   child: Center(
                       child: Container(
-                        color: Colors.black.withOpacity(0.5),
-                    padding: const EdgeInsets.only(top: 0.0),
+                          color: Colors.black.withOpacity(0.5),
+                          padding: const EdgeInsets.only(top: 0.0),
                           width: MediaQuery.of(context).size.width,
                           height: 40,
                           child: Center(
