@@ -19,7 +19,11 @@ class Gallery extends Equatable {
 List<Gallery> mockGallery = [
   Gallery(
     images:
-        "https://firebasestorage.googleapis.com/v0/b/xber-futsal-club.appspot.com/o/Gallery10.jpeg?alt=media&token=f922e453-3054-4b8e-b574-62be9f60f6fc",
+        "https://firebasestorage.googleapis.com/v0/b/xber-futsal-club.appspot.com/o/Gallery3.jpeg?alt=media&token=faf75a16-18c3-4e0d-a9cd-099b83211e7e",
+  ),
+  Gallery(
+    images:
+        "https://firebasestorage.googleapis.com/v0/b/xber-futsal-club.appspot.com/o/Gallery4.jpeg?alt=media&token=9c87d8bd-8cbd-4ed4-b735-ab811a9277ad",
   ),
   Gallery(
     images:
@@ -43,26 +47,6 @@ List<Gallery> mockGallery = [
   ),
   Gallery(
     images:
-        "https://firebasestorage.googleapis.com/v0/b/xber-futsal-club.appspot.com/o/Gallery17.jpeg?alt=media&token=6ee1179b-28c3-4404-a39d-0e3904a88c82",
-  ),
-  Gallery(
-    images:
-        "https://firebasestorage.googleapis.com/v0/b/xber-futsal-club.appspot.com/o/Gallery18.jpeg?alt=media&token=c22f75e4-9286-4944-b73e-1e5385ffdb1f",
-  ),
-  Gallery(
-    images:
         "https://firebasestorage.googleapis.com/v0/b/xber-futsal-club.appspot.com/o/Gallery2.jpeg?alt=media&token=132e7d09-75f5-4106-8a5e-96e56854580b",
-  ),
-  Gallery(
-    images:
-        "https://firebasestorage.googleapis.com/v0/b/xber-futsal-club.appspot.com/o/Gallery20.jpeg?alt=media&token=e230a02b-6f60-40ee-b5df-e3f52b4b94da",
-  ),
-  Gallery(
-    images:
-        "https://firebasestorage.googleapis.com/v0/b/xber-futsal-club.appspot.com/o/Gallery3.jpeg?alt=media&token=faf75a16-18c3-4e0d-a9cd-099b83211e7e",
-  ),
-  Gallery(
-    images:
-        "https://firebasestorage.googleapis.com/v0/b/xber-futsal-club.appspot.com/o/Gallery4.jpeg?alt=media&token=9c87d8bd-8cbd-4ed4-b735-ab811a9277ad",
   ),
 ];

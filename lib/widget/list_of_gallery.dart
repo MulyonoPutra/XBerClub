@@ -13,6 +13,7 @@ class ListOfGallery extends StatelessWidget {
         height: 200,
         child: Card(
           shape: RoundedRectangleBorder(
+            side: BorderSide(color: Colors.black38, width: 1.0),
             borderRadius: BorderRadius.circular(10.0),
           ),
           child: Stack(

@@ -6,7 +6,7 @@ class Schedule extends StatelessWidget {
     return ListView(
       children: <Widget>[
         SizedBox(
-          height: 20,
+          height: 10,
         ),
         Column(
           children: mockScores

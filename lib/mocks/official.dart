@@ -43,4 +43,12 @@ List<Official> mockOfficials = [
     dateOfBirth: "Sukabumi, DD MM YYYY",
     heightAndWeight: "xxx kg / xx cm",
   ),
+  Official(
+    id: 4,
+    name: "Edi Supandi a.k.a Bopenk",
+    profilPicture:
+        "https://firebasestorage.googleapis.com/v0/b/xber-futsal-club.appspot.com/o/bopenk.png?alt=media&token=c2dd0bd7-0d4c-4329-8eff-3899376c3ed5",
+    dateOfBirth: "Sukabumi, DD MM YYYY",
+    heightAndWeight: "xxx kg / xx cm",
+  ),
 ];

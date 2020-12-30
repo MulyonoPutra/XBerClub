@@ -43,6 +43,17 @@ List<Player> mockPlayers = [
         "Keeper yang bagus dalam team. Sedikit lambat untuk terpicu diawal. Ketika tekanan darah sudah mulai terpacu, teknik dan semangatnya mulai naik dan lebih bergairah dalam pertandingan.",
   ),
   Player(
+    id: 5,
+    name: "Aden Farhan",
+    profilPicture:
+        "https://firebasestorage.googleapis.com/v0/b/xber-futsal-club.appspot.com/o/WhatsApp%20Image%202020-11-29%20at%2017.32.41.jpeg?alt=media&token=fd8aa55f-a06a-45fb-96cc-72ea2a7ff5ae",
+    dateOfBirth: "Sukabumi, DD MM YYYY",
+    heightAndWeight: "xxx kg / xx cm",
+    backNumber: 12,
+    dscriptions:
+        "Our leader! Seorang kapten sekaligus goalkeeper. Leadership yang bagus dalam tim.",
+  ),
+  Player(
     id: 2,
     name: "Angga",
     profilPicture:
@@ -74,17 +85,6 @@ List<Player> mockPlayers = [
     backNumber: 12,
     dscriptions:
         "Nice talent! lincah, a lot of speed, smart. Full of teknik dalam bermain.",
-  ),
-  Player(
-    id: 5,
-    name: "Aden Farhan",
-    profilPicture:
-        "https://firebasestorage.googleapis.com/v0/b/xber-futsal-club.appspot.com/o/WhatsApp%20Image%202020-11-29%20at%2017.32.41.jpeg?alt=media&token=fd8aa55f-a06a-45fb-96cc-72ea2a7ff5ae",
-    dateOfBirth: "Sukabumi, DD MM YYYY",
-    heightAndWeight: "xxx kg / xx cm",
-    backNumber: 12,
-    dscriptions:
-        "Our leader! Seorang kapten sekaligus goalkeeper. Leadership yang bagus dalam tim.",
   ),
   Player(
     id: 6,

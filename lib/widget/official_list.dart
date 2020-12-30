@@ -11,6 +11,9 @@ class OfficialList extends StatelessWidget {
     return Container(
         height: 200,
         child: Card(
+          shape: RoundedRectangleBorder(
+              side: new BorderSide(color: Colors.black, width: 1.0),
+              borderRadius: BorderRadius.circular(4.0)),
           child: Stack(
             children: [
               Center(

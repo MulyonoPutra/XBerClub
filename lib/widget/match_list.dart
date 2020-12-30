@@ -14,11 +14,15 @@ class MatchListItem extends StatelessWidget {
         height: 200,
         child: Card(
           shape: RoundedRectangleBorder(
+            side: BorderSide(color: Colors.black, width: 1.0),
             borderRadius: BorderRadius.circular(10.0),
           ),
           child: Container(
             decoration: BoxDecoration(
               color: Colors.black,
+              boxShadow: [
+                BoxShadow(color: Colors.black, spreadRadius: 3),
+              ],
               gradient: LinearGradient(
                   colors: [Colors.black87, Colors.amberAccent],
                   begin: const FractionalOffset(0.0, 0.0),
