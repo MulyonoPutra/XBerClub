@@ -7,6 +7,7 @@ import 'package:xber_futsal_club_app/widget/match_list.dart';
 import 'package:xber_futsal_club_app/widget/official_list.dart';
 import 'package:xber_futsal_club_app/widget/player_list.dart';
 import 'package:flutter/foundation.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 part 'schedule.dart';
 part 'team_gallery.dart';
