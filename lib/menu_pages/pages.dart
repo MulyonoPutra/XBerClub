@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:xber_futsal_club_app/mocks/models.dart';
+import 'package:xber_futsal_club_app/utils/constants.dart';
 import 'package:xber_futsal_club_app/widget/list_of_gallery.dart';
 import 'package:xber_futsal_club_app/widget/match_list.dart';
 import 'package:xber_futsal_club_app/widget/official_list.dart';

@@ -24,38 +24,71 @@ class _InformationState extends State<Information> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        body: Card(
-      shape: RoundedRectangleBorder(
-        side: BorderSide(color: Colors.black38, width: 1.0),
-        borderRadius: BorderRadius.circular(10.0),
-      ),
-      child: Stack(
-        children: [
-          Center(
-              child: CircularProgressIndicator(
-                  backgroundColor: Colors.yellowAccent,
-                  valueColor: new AlwaysStoppedAnimation<Color>(Colors.black))),
-          Container(
-            child: GoogleMap(
-              mapType: MapType.normal,
-              initialCameraPosition: CameraPosition(
-                  target: LatLng(-6.895327499970892, 106.80946383829516),
-                  zoom: 14),
-              markers: _marker,
-              onTap: (position) {
-                setState(() {
-                  _marker.add(Marker(
-                      markerId: MarkerId(
-                          "${position.latitude}, ${position.longitude}"),
-                      icon: BitmapDescriptor.defaultMarker,
-                      position: position));
-                });
-              },
-            ),
-          ),
-        ],
-      ),
-    ));
+    return MediaQuery.removePadding(
+        context: context,
+        removeTop: true,
+        child: Scaffold(
+          backgroundColor: Colors.black,
+            resizeToAvoidBottomPadding: false,
+            resizeToAvoidBottomInset: false,
+            body: SingleChildScrollView(
+              padding: EdgeInsets.only(top: 0),
+              child: Column(
+                children: [
+                  SizedBox(height: 20),
+                  Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Column(
+                          children: [
+                            Text(DESCRIPTION,
+                                style: GoogleFonts.lobsterTwo(
+                                    fontWeight: FontWeight.w300,
+                                    color: Colors.amber[400],
+                                    fontSize: 14)),
+                            SizedBox(height: 20),
+                            Text(LETS_PLAY,
+                                textAlign: TextAlign.left,
+                                style: GoogleFonts.lobsterTwo(
+                                    fontWeight: FontWeight.w300,
+                                    color: Colors.amber[400],
+                                    fontSize: 16)),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                  Center(
+                    child: Card(
+                      child: Column(
+                        children: <Widget>[
+                          SizedBox(
+                            height: 300,
+                            child: GoogleMap(
+                              mapType: MapType.normal,
+                              initialCameraPosition: CameraPosition(
+                                  target: LatLng(
+                                      -6.895327499970892, 106.80946383829516),
+                                  zoom: 14),
+                              markers: _marker,
+                              onTap: (position) {
+                                setState(() {
+                                  _marker.add(Marker(
+                                      markerId: MarkerId(
+                                          "${position.latitude}, ${position.longitude}"),
+                                      icon: BitmapDescriptor.defaultMarker,
+                                      position: position));
+                                });
+                              },
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            )));
   }
 }
