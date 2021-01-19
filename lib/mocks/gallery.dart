@@ -3,16 +3,19 @@ part of 'models.dart';
 class Gallery extends Equatable {
   final int id;
   final String images;
+  final String poster;
 
   Gallery({
     this.id,
     this.images,
+    this.poster
   });
 
   @override
   List<Object> get props => [
         id,
         images,
+        poster
       ];
 }
 
@@ -20,22 +23,27 @@ List<Gallery> mockGallery = [
   Gallery(
     images:
         "https://firebasestorage.googleapis.com/v0/b/xber-futsal-club.appspot.com/o/Gallery3.jpeg?alt=media&token=faf75a16-18c3-4e0d-a9cd-099b83211e7e",
+    poster: "assets/images/poster3.jpeg"
   ),
   Gallery(
     images:
         "https://firebasestorage.googleapis.com/v0/b/xber-futsal-club.appspot.com/o/Gallery4.jpeg?alt=media&token=9c87d8bd-8cbd-4ed4-b735-ab811a9277ad",
+    poster: "assets/images/poster5.jpeg"
   ),
   Gallery(
     images:
         "https://firebasestorage.googleapis.com/v0/b/xber-futsal-club.appspot.com/o/Gallery9.jpeg?alt=media&token=8dbcb76c-0112-4cfa-8495-06cfadd890be",
+    poster: "assets/images/poster2.jpeg"
   ),
   Gallery(
     images:
         "https://firebasestorage.googleapis.com/v0/b/xber-futsal-club.appspot.com/o/Gallery11.jpeg?alt=media&token=4b6d9f72-3e0b-48e6-bfad-3394f7814e69",
+    poster: "assets/images/poster4.jpeg"
   ),
   Gallery(
     images:
         "https://firebasestorage.googleapis.com/v0/b/xber-futsal-club.appspot.com/o/Gallery12.jpeg?alt=media&token=adfdade6-fc18-43d4-8b22-50accfb9ff28",
+    poster: "assets/images/poster6.jpeg"
   ),
   Gallery(
     images:

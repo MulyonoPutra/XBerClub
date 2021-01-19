@@ -14,7 +14,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
   List pages = [
     MyRoute(
       iconData: Icons.home,
-      page: Schedule(),
+      page: Information(),
     ),
     MyRoute(
       iconData: Icons.person,
@@ -22,7 +22,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
     ),
     MyRoute(
       iconData: Icons.schedule,
-      page: Information(),
+      page: AboutUs(),
     ),
     MyRoute(
       iconData: Icons.image,
