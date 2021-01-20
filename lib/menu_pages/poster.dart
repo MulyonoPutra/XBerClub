@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:xber_futsal_club_app/mocks/models.dart';
 
@@ -29,8 +27,7 @@ class Poster extends StatelessWidget {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10.0),
                   image: DecorationImage(
-                      image: AssetImage(gallery.poster),
-                      fit: BoxFit.cover),
+                      image: AssetImage(gallery.poster), fit: BoxFit.cover),
                 ),
               ),
             ],

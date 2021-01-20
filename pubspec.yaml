@@ -63,6 +63,7 @@ flutter:
     - assets/images/bg.png
     - assets/images/splash.png
     - assets/images/angle-arrow-down.png
+    - assets/images/logo_app.png
     - assets/images/poster1.jpeg
     - assets/images/poster2.jpeg
     - assets/images/poster3.jpeg

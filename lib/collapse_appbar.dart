@@ -53,10 +53,10 @@ class _CollapseAppBarState extends State<CollapseAppBar> {
                         centerTitle: true,
                         title: GestureDetector(
                           onTap: () {
-                            // Navigator.push(
-                            //     context,
-                            //     MaterialPageRoute(
-                            //         builder: (context) => BottomNavBar()));
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => BottomNavBar()));
                           },
                           child: Image.asset(
                             'assets/images/logo_app.png',

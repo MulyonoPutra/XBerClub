@@ -24,12 +24,7 @@ class _StaffState extends State<Staff> {
               crossAxisCount: 4,
               itemCount: mockOfficials.length,
               itemBuilder: (BuildContext context, int index) => GestureDetector(
-                onTap: () => Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) =>
-                          StaffDetails(official: mockOfficials[index]),
-                    )),
+                onTap: () {},
                 child: OfficialList(
                   official: mockOfficials[index],
                 ),
