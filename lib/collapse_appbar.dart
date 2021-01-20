@@ -17,7 +17,7 @@ class _CollapseAppBarState extends State<CollapseAppBar> {
             content: Text('You are going to exit the X-Ber application'),
             actions: <Widget>[
               FlatButton(
-                child: Text('NO'),
+                child: Text('NO'), 
                 onPressed: () {
                   Navigator.of(context).pop(false);
                 },
