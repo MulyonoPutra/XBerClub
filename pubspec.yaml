@@ -27,6 +27,7 @@ dependencies:
   cupertino_icons: ^1.0.0
   curved_navigation_bar: ^0.3.4
   equatable: ^1.2.5
+  firebase_messaging: ^7.0.3
   flutter_colorpicker: ^0.3.4
   flutter_launcher_icons: ^0.8.1
   flutter_native_splash: ^0.1.9

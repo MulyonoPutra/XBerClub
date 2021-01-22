@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "228676237987",
+    "firebase_url": "https://xber-futsal-club.firebaseio.com",
+    "project_id": "xber-futsal-club",
+    "storage_bucket": "xber-futsal-club.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:228676237987:android:0f2537b416feb51cb29d16",
+        "android_client_info": {
+          "package_name": "com.example.xber_futsal_club_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "228676237987-4cnli4cjs41qk46qtecvcll0sh2j7g06.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAr7xYVCTs1ZaFMGkyvnS1E6Re7GTAlpTw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "228676237987-4cnli4cjs41qk46qtecvcll0sh2j7g06.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
