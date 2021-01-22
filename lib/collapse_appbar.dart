@@ -48,7 +48,7 @@ class _CollapseAppBarState extends State<CollapseAppBar> {
                     expandedHeight: MediaQuery.of(context).size.height,
                     floating: false,
                     pinned: true,
-                    backgroundColor: Colors.black,
+                    backgroundColor: Colors.black,  
                     flexibleSpace: FlexibleSpaceBar(
                         centerTitle: true,
                         title: GestureDetector(
