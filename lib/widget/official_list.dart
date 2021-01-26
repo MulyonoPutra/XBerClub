@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:xber_futsal_club_app/mocks/models.dart';
 
 class OfficialList extends StatelessWidget {

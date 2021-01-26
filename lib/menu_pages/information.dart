@@ -6,10 +6,9 @@ class Information extends StatelessWidget {
     return ListView.builder(
       itemCount: 5,
       itemBuilder: (context, index) => Container(
-         
           child: Poster(
-            gallery: mockGallery[index],
-          )),
+        gallery: mockGallery[index],
+      )),
     );
   }
 }

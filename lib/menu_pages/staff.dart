@@ -1,13 +1,16 @@
 part of 'pages.dart';
 
 class Staff extends StatefulWidget {
+
   final Official official;
   const Staff({
     Key key,
     this.official,
   }) : super(key: key);
+
   @override
   _StaffState createState() => _StaffState();
+  
 }
 
 class _StaffState extends State<Staff> {

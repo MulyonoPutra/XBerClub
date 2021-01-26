@@ -1,11 +1,11 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:xber_futsal_club_app/mocks/models.dart';
 
 class Poster extends StatelessWidget {
+
   final Gallery gallery;
   const Poster({Key key, @required this.gallery}) : super(key: key);
+  
   @override
   Widget build(BuildContext context) {
     return Container(

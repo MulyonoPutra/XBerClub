@@ -27,10 +27,12 @@ class _GalleryState extends State<Gallery> {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        SizedBox(height: 30,),
+        SizedBox(
+          height: 30
+        ),
         Expanded(
             child: ListView.builder(
-              itemExtent: 250.0,
+                itemExtent: 250.0,
                 controller: controller,
                 itemCount: mockGallery.length,
                 physics: BouncingScrollPhysics(),

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:xber_futsal_club_app/mocks/models.dart';
 
 class ListOfGallery extends StatelessWidget {
@@ -30,25 +29,6 @@ class ListOfGallery extends StatelessWidget {
                       image: NetworkImage(gallery.images), fit: BoxFit.cover),
                 ),
               ),
-              // Container(
-              //   child: Padding(
-              //     padding: const EdgeInsets.only(top: 182.0),
-              //     child: Center(
-              //         child: Container(
-              //             color: Colors.black.withOpacity(0.5),
-              //             padding: const EdgeInsets.only(top: 0.0),
-              //             width: MediaQuery.of(context).size.width,
-              //             height: 40,
-              //             child: Center(
-              //               child: Text(
-              //                 "We are X-Ber team",
-              //                 style: GoogleFonts.lobsterTwo(
-              //                     fontWeight: FontWeight.w700,
-              //                     color: Colors.yellow[600]),
-              //               ),
-              //             ))),
-              //   ),
-              // )
             ],
           ),
         ));

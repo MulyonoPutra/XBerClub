@@ -15,11 +15,15 @@ class _AboutUsState extends State<AboutUs> {
 
   @override
   void initState() {
+    marker();
+    super.initState();
+  }
+
+  marker() {
     _marker.add(Marker(
         markerId: MarkerId("-6.895327499970892, 106.80946383829516"),
         position: currentPosition,
         icon: BitmapDescriptor.defaultMarker));
-    super.initState();
   }
 
   @override

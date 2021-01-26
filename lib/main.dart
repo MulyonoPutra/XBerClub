@@ -20,6 +20,10 @@ class _XberAppState extends State<XberApp> {
   @override
   void initState() {
     super.initState();
+    firebaseMsg();
+  }
+
+  firebaseMsg() {
     _firebaseMessaging.configure(
       onMessage: (Map<String, dynamic> message) async {
         print("onMessage: $message");

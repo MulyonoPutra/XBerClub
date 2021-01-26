@@ -1,6 +1,7 @@
 part of 'pages.dart';
 
 class ProfilePlayerDetails extends StatefulWidget {
+  
   final Function onBackButtonPressed;
   final Player player;
 
