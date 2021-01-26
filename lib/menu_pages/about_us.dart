@@ -44,22 +44,50 @@ class _AboutUsState extends State<AboutUs> {
                           children: [
                             SizedBox(height: 20),
                             Text(DESCRIPTION,
-                                style: GoogleFonts.lobsterTwo(
-                                    fontWeight: FontWeight.w300,
+                                style: TextStyle(
+                                    fontFamily: 'LobsterTwo',
                                     color: Colors.amber[400],
                                     fontSize: 16)),
                             SizedBox(height: 20),
                             Text(LETS_PLAY,
                                 textAlign: TextAlign.left,
-                                style: GoogleFonts.lobsterTwo(
-                                    fontWeight: FontWeight.w300,
+                                style: TextStyle(
+                                    fontFamily: 'LobsterTwo',
                                     color: Colors.amber[400],
                                     fontSize: 16)),
                             SizedBox(height: 20),
+                            Card(
+                              child: Column(
+                                children: <Widget>[
+                                  SizedBox(
+                                    height: 300,
+                                    child: GoogleMap(
+                                      mapType: MapType.normal,
+                                      initialCameraPosition: CameraPosition(
+                                          target: LatLng(-6.895327499970892,
+                                              106.80946383829516),
+                                          zoom: 14),
+                                      markers: _marker,
+                                      onTap: (position) {
+                                        setState(() {
+                                          _marker.add(Marker(
+                                              markerId: MarkerId(
+                                                  "${position.latitude}, ${position.longitude}"),
+                                              icon: BitmapDescriptor
+                                                  .defaultMarker,
+                                              position: position));
+                                        });
+                                      },
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            SizedBox(height: 20),
                             Text(ADDRESS,
                                 textAlign: TextAlign.left,
-                                style: GoogleFonts.lobsterTwo(
-                                    fontWeight: FontWeight.w300,
+                                style: TextStyle(
+                                    fontFamily: 'LobsterTwo',
                                     color: Colors.amber[400],
                                     fontSize: 16)),
                           ],
@@ -70,35 +98,7 @@ class _AboutUsState extends State<AboutUs> {
                   Center(
                     child: Column(
                       children: [
-                        Card(
-                          child: Column(
-                            children: <Widget>[
-                              SizedBox(
-                                height: 300,
-                                child: GoogleMap(
-                                  mapType: MapType.normal,
-                                  initialCameraPosition: CameraPosition(
-                                      target: LatLng(-6.895327499970892,
-                                          106.80946383829516),
-                                      zoom: 14),
-                                  markers: _marker,
-                                  onTap: (position) {
-                                    setState(() {
-                                      _marker.add(Marker(
-                                          markerId: MarkerId(
-                                              "${position.latitude}, ${position.longitude}"),
-                                          icon: BitmapDescriptor.defaultMarker,
-                                          position: position));
-                                    });
-                                  },
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        SizedBox(
-                          height: 20
-                        ),
+                        SizedBox(height: 20),
                         SizedBox(
                           child: Text(HOMEBASE,
                               textAlign: TextAlign.left,

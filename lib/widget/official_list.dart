@@ -41,9 +41,10 @@ class OfficialList extends StatelessWidget {
                           child: Center(
                             child: Text(
                               official.name,
-                              style: GoogleFonts.lobsterTwo(
-                                  fontWeight: FontWeight.w700,
-                                  color: Colors.yellow[600]),
+                              style: TextStyle(
+                                  fontFamily: 'LobsterTwo',
+                                  color: Colors.amber[400],
+                                  fontSize: 16),
                             ),
                           ))),
                 ),

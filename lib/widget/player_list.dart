@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:xber_futsal_club_app/mocks/models.dart';
 
 class PlayerList extends StatelessWidget {
@@ -38,9 +37,10 @@ class PlayerList extends StatelessWidget {
                           child: Center(
                             child: Text(
                               player.name,
-                              style: GoogleFonts.lobsterTwo(
-                                  fontWeight: FontWeight.w700,
-                                  color: Colors.yellow[600]),
+                              style: TextStyle(
+                                  fontFamily: 'LobsterTwo',
+                                  color: Colors.amber[400],
+                                  fontSize: 16),
                             ),
                           ))),
                 ),

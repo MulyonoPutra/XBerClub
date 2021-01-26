@@ -39,10 +39,10 @@ class _OfficialTeamState extends State<OfficialTeam> {
                           child: Align(
                             alignment: Alignment.center,
                             child: Text("Player",
-                                style: GoogleFonts.lobsterTwo(
-                                    fontWeight: FontWeight.w300,
+                                style: TextStyle(
+                                    fontFamily: 'LobsterTwo',
                                     color: Colors.white,
-                                    fontSize: 14)),
+                                    fontSize: 16)),
                           ),
                         ),
                         Tab(
@@ -50,10 +50,10 @@ class _OfficialTeamState extends State<OfficialTeam> {
                           child: Align(
                             alignment: Alignment.center,
                             child: Text("Official",
-                                style: GoogleFonts.lobsterTwo(
-                                    fontWeight: FontWeight.w300,
+                                style: TextStyle(
+                                    fontFamily: 'LobsterTwo',
                                     color: Colors.white,
-                                    fontSize: 14)),
+                                    fontSize: 16)),
                           ),
                         ),
                       ],

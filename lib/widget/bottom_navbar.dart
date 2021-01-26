@@ -21,7 +21,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
       page: OfficialTeam(),
     ),
     MyRoute(
-      iconData: Icons.schedule,
+      iconData: Icons.map,
       page: AboutUs(),
     ),
     MyRoute(

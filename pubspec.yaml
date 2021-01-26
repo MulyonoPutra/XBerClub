@@ -71,6 +71,7 @@ flutter:
     - assets/images/poster4.jpeg
     - assets/images/poster5.jpeg
     - assets/images/poster6.jpeg
+    - assets/images/homebase1.jpg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
   # For details regarding adding assets from package dependencies, see
@@ -84,6 +85,12 @@ flutter:
     - family: Raleway
       fonts:
         - asset: assets/fonts/Raleway-Medium.ttf
+    - family: LobsterTwo
+      fonts:
+        - asset: assets/fonts/LobsterTwo-Regular.ttf
+          weight: 300
+
+
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
