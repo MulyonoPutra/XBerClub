@@ -10,7 +10,7 @@ class ListOfGallery extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         padding: const EdgeInsets.only(top: 10.0, bottom: 10),
-        height: 200,
+        height: 250,
         child: Card(
           shape: RoundedRectangleBorder(
             side: BorderSide(color: Colors.black38, width: 1.0),

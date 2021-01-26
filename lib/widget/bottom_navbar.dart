@@ -13,7 +13,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
 
   List pages = [
     MyRoute(
-      iconData: Icons.home,
+      iconData: Icons.sports_football_rounded,
       page: Information(),
     ),
     MyRoute(
