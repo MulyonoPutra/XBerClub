@@ -33,7 +33,7 @@ class _AboutUsState extends State<AboutUs> {
         removeTop: true,
         child: Scaffold(
             backgroundColor: Colors.black,
-            resizeToAvoidBottomPadding: false,
+            //resizeToAvoidBottomPadding: false,
             resizeToAvoidBottomInset: false,
             body: SingleChildScrollView(
               padding: EdgeInsets.only(top: 0),

@@ -36,7 +36,7 @@ class _CollapseAppBarState extends State<CollapseAppBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      resizeToAvoidBottomPadding: false,
+      //resizeToAvoidBottomPadding: false,
         backgroundColor: Colors.black45,
         body: WillPopScope(
           onWillPop: _onBackPressed,
